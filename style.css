@@ -1,24 +1,54 @@
-.narrow {
-  width: 75%;
-  margin: 1.5rem auto;
-  padding-top: 2rem;
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+body{
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+  color: #505962;
 }
-.narrow h1 {
-    font-size: 2.4rem;
-}
-.btn-secondary {
-  border-width: medium;
-  border-radius: 0;
-  padding: .6rem 1.2rem;
-  font-size: 1.2rem;
+
+.navbar{
   text-transform: uppercase;
-  margin: 1rem;
-  border-color: #1EBBA3;
-  background-color: #1EBBA3;
-  color: white;
+  font-weight: bold;
+  font-size: .9rem;
+  letter-spacing: .1rem;
+  background: rgba(0, 0, 0, 0.6)!important; 
 }
-.btn-secondary:hover,.btn-secondary:focus {
-  border-color: #189582;
-  background-color: #189582;
-  color: white;
+.navbar-nav li {
+  padding-right: .7rem; 
+}
+.navbar-dark .navbar-nav .nav-link {
+  color:white;
+  padding-top: .8rem;
+}
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover{
+  color:rgb(155, 210, 245);
+}
+
+
+.home-inner{
+  background-image: url(img/home_smile.png); 
+  zoom: 60%;
+}
+.caption{
+  width:100%;
+  max-width: 100%;
+  position: absolute;
+  top: 38%;
+  
+  z-index:1;
+  color:#0c3258;
+  text-transform: uppercase;
+}
+.caption h1{
+  font-size: 3.8rem;
+  font-weight: bold;
+  letter-spacing: .1rem;
+  text-shadow: .1rem .1rem .1rem #808080be;
+  padding-bottom: 1rem;
+}
+.caption h3{
+  font-size: 2rem;
+  text-shadow: .1rem .1rem .5rem #808080be;
+  padding-bottom: 1.6rem;
 }
