@@ -5,6 +5,12 @@ body{
   font-family: 'Lato', sans-serif;
   color: #505962;
 }
+.offset::before{
+  display: block;
+  content: "";
+  height: 4rem;
+  margin-top:-4rem; 
+}
 
 .navbar{
   text-transform: uppercase;
@@ -25,12 +31,6 @@ body{
   color:rgb(113, 195, 246);
 }
 
-.btn-outline-light,.btn-outline-light:hover  {
- color:rgb(113, 195, 246);
- border-color:rgb(113, 195, 246);
-}
-
-
 .home-inner{
   background-image: url(img/three_gen_smiles.jpg); 
   zoom: 60%;
@@ -42,24 +42,37 @@ body{
   top: 38%;
   
   z-index:1;
-  /* color:#0c3258;*/
-   color:rgb(113, 195, 246);
+  color:rgb(113, 195, 246);
   text-transform: uppercase;
 }
 .caption h1{
-  font-size: 3.8rem;
+  font-size: 7vw;
   font-weight: bold;
   letter-spacing: .1rem;
   text-shadow: .1rem .1rem .1rem #2e2c2cbe;
   padding-bottom: 1rem;
 }
 .caption h3{
-  font-size: 2rem;
+  font-size: 4vw;
   text-shadow: .1rem .1rem .5rem #2e2c2cbe;
   padding-bottom: 1.6rem;
 }
 .btn-lg{
   border-width: medium;
   padding: .6rem 1.3rem;
-  font-size: 1.1rem; 
+  font-size: 2vw; 
+}
+.btn-outline-light, .btn-outline-light:hover  {
+  color:rgb(113, 195, 246);
+  border-color:rgb(113, 195, 246);
+}
+
+.narrow{
+   width:75%;
+   margin: 1.5rem auto;
+   padding-top: 2.5rem;
+}
+.jumbotron{
+    margin-bottom: 0;
+    padding: 0 0 3.5rem;
 }
