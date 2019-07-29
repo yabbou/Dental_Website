@@ -25,9 +25,14 @@ body{
   color:rgb(155, 210, 245);
 }
 
+.btn-outline-light,.btn-outline-light:hover  {
+ color:#0c3258;
+ border-color:#0c3258;
+}
+
 
 .home-inner{
-  background-image: url(img/home_smile.png); 
+  background-image: url(img/three_gen_smiles.jpg); 
   zoom: 60%;
 }
 .caption{
