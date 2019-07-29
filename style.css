@@ -147,3 +147,11 @@ padding: 2rem 0;
 h3.heading.hfoot{
   margin-bottom: 0;
 }
+.hours{
+  text-align: left;
+  margin-bottom: 10px;
+  margin-left:25%;
+
+  -webkit-border-horizontal-spacing: 1rem; 
+  border-collapse: separate;
+}
