@@ -19,7 +19,7 @@ body{
   letter-spacing: .1rem;
   background: rgba(0, 0, 0, 0.6)!important; 
 }
-.navbar-nav li {
+.navbar-nav li{
   padding-right: .7rem; 
 }
 .navbar-dark .navbar-nav .nav-link {
@@ -28,7 +28,7 @@ body{
 }
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link:hover{
-  color:rgb(113, 195, 246);
+  color:#53A7DB;
 }
 
 .home-inner{
@@ -42,29 +42,31 @@ body{
   top: 38%;
   
   z-index:1;
-  color:rgb(113, 195, 246);
   text-transform: uppercase;
 }
 .caption h1{
-  font-size: 7vw;
+  font-size: 4.6vw;
   font-weight: bold;
   letter-spacing: .1rem;
+
+  color:#53A7DB; /* the darker shade */
   text-shadow: .1rem .1rem .1rem #2e2c2cbe;
-  padding-bottom: 1rem;
+  padding-bottom: 0rem;
 }
 .caption h3{
-  font-size: 4vw;
+  font-size: 2.6vw;
+  color:#70C3F6;
   text-shadow: .1rem .1rem .5rem #2e2c2cbe;
   padding-bottom: 1.6rem;
 }
 .btn-lg{
   border-width: medium;
   padding: .6rem 1.3rem;
-  font-size: 2vw; 
+  font-size: 1.6vw; 
 }
 .btn-outline-light, .btn-outline-light:hover  {
-  color:rgb(113, 195, 246);
-  border-color:rgb(113, 195, 246);
+  color:#70C3F6;
+  border-color:#70C3F6;
 }
 
 .narrow{
@@ -75,4 +77,74 @@ body{
 .jumbotron{
     margin-bottom: 0;
     padding: 0 0 3.5rem;
+    border-radius: 0;
+}
+h3.heading{
+  font-size: 1.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1.9rem;
+}
+.heading-underline{
+  width:3rem;
+  height: .2rem;
+  background-color: #70C3F6;
+  margin: 0 auto .8rem;
+}
+
+.service svg.svg-inline--fa{
+  color: #53A7DB;
+}
+.service h3{
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  padding-bottom: .4rem;
+}
+.service p{
+  font-size: 1.1rem;
+}
+.narrow.text-center{
+  margin-top: 0;
+}
+
+.map {
+position: relative;
+text-align: center;
+height: 437px;
+width: 100%;
+
+mask-border:0;
+border-width: 0;
+}
+.iframe{
+height:437;
+border:0; 
+scroll-margin:none
+}
+.gmap_canvas {
+overflow: hidden;
+background: none !important;
+height: 437px;
+width: 100%;
+}
+
+.about-image{
+  margin: 1rem;
+}
+.about-image img {
+  width:300px;
+  border-radius: 50%;
+}
+.about-hr{
+  border-top: .05rem solid #53A7DB;
+}
+
+footer{
+background-color: #40474e;
+color: white;
+padding: 2rem 0;
+}
+h3.heading.hfoot{
+  padding-bottom: 0;
+
 }
