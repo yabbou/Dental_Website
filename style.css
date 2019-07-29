@@ -22,12 +22,12 @@ body{
 }
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link:hover{
-  color:rgb(155, 210, 245);
+  color:rgb(113, 195, 246);
 }
 
 .btn-outline-light,.btn-outline-light:hover  {
- color:#0c3258;
- border-color:#0c3258;
+ color:rgb(113, 195, 246);
+ border-color:rgb(113, 195, 246);
 }
 
 
@@ -42,18 +42,24 @@ body{
   top: 38%;
   
   z-index:1;
-  color:#0c3258;
+  /* color:#0c3258;*/
+   color:rgb(113, 195, 246);
   text-transform: uppercase;
 }
 .caption h1{
   font-size: 3.8rem;
   font-weight: bold;
   letter-spacing: .1rem;
-  text-shadow: .1rem .1rem .1rem #808080be;
+  text-shadow: .1rem .1rem .1rem #2e2c2cbe;
   padding-bottom: 1rem;
 }
 .caption h3{
   font-size: 2rem;
-  text-shadow: .1rem .1rem .5rem #808080be;
+  text-shadow: .1rem .1rem .5rem #2e2c2cbe;
   padding-bottom: 1.6rem;
+}
+.btn-lg{
+  border-width: medium;
+  padding: .6rem 1.3rem;
+  font-size: 1.1rem; 
 }
