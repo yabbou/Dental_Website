@@ -171,3 +171,29 @@ hr.socket{
   border-top: .2rem solid #666b71;
   margin-top: 3rem; 
 }
+
+div.custom-icon{
+  margin-left: 15%;
+}
+img.custom-icon{
+  filter:color #53A7DB; 
+  width: 20%;
+  padding:0px; 
+
+  position: relative; 
+  top: -30px;
+}
+div.custom-icon h3, div.custom-icon p{
+  position: relative; 
+  top: -26px;
+}
+@media (max-width: 767px) {
+  div.col-md-4.custom-icon {  
+  margin-left: 0;
+  }
+}
+
+/*<div>Icon made by <a href="https://www.flaticon.com/authors/freepik" 
+title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"                 
+title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"                 
+title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>*/
