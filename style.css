@@ -144,14 +144,28 @@ background-color: #40474e;
 color: white;
 padding: 2rem 0;
 }
+footer a {
+  color: white;
+}
+footer svg.svg-inline--fa{
+  font-size: 1.6rem;
+}
+footer svg.svg-inline--fa:hover{
+color: #53A7DB;
+}
 h3.heading.hfoot{
   margin-bottom: 0;
 }
 .hours{
-  text-align: left;
-  margin-bottom: 10px;
-  margin-left:25%;
+  text-align: justify;
+  margin: 0 auto 10px;
+  width: 20rem;
 
   -webkit-border-horizontal-spacing: 1rem; 
   border-collapse: separate;
+}
+hr.socket{
+  width: 100%;
+  border-top: .2rem solid #666b71;
+  margin-top: 3rem; 
 }
