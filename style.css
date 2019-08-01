@@ -1,32 +1,30 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700');
 
-body{
-  overflow-x: hidden;
-  font-family: 'Lato', sans-serif;
-  color: #505962;
-}
-.offset::before{
-  display: block;
-  content: "";
-  height: 4rem;
-  margin-top:-4rem; 
-}
-
 /* Navbar */
 
+.nav-title{
+  color: #53A7DB; 
+  font-size: 180%; 
+  font-weight: bolder;
+}
 .navbar{
   text-transform: uppercase;
   font-weight: bold;
   font-size: .9rem;
+
   letter-spacing: .1rem;
-  background: rgba(0, 0, 0, 0.6)!important; 
+  background: rgba(255, 255, 255, 0.8)!important; 
 }
 .navbar-nav li{
   padding-right: .7rem; 
 }
 .navbar-dark .navbar-nav .nav-link {
-  color:white;
-  padding-top: .8rem;
+  color:#666666; 
+  height: 55px;
+  vertical-align: middle;
+}
+.nav-link{
+  padding-top: 1rem;
 }
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link:hover{
@@ -44,8 +42,21 @@ body{
 
 /* General */
 
+body{
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+  color: #505962;
+}
+.offset::before{
+  display: block;
+  content: "";
+  height: 4rem;
+  margin-top:-4rem; 
+}
+
 .home-inner{
   background-image: url(img/three_gen_smiles.jpg); 
+  filter: brightness(102%);
   zoom: 60%;
 }
 .caption{
@@ -118,7 +129,7 @@ h3.heading{
   z-index: -1;
 }
 .dark{
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.17);
   color: whitesmoke;
   text-shadow: .1rem .1rem .3rem #2e2c2cbe;
   padding: 7rem 2rem;
@@ -126,13 +137,25 @@ h3.heading{
 .fixed-background p{
   margin-left: 8rem;
   margin-right: 8rem;
+
+}
+
+.about-image{
+  margin: 1rem;
+}
+.about-image img {
+  width:300px;
+  border-radius: 50%;
+}
+.about-hr{
+  border-top: .05rem solid #53A7DB;
 }
 
 /* Google Embeded */
 
 .google-reviews{
   background-color: rgba(255, 255, 255, 0.8);
-  width: 100%;
+  width: 70%;
   padding: 15px;
   border-radius: .3rem;
 }
@@ -142,7 +165,6 @@ text-align: left;
 
 .map {
 position: relative;
-text-align: center;
 height: 437px;
 width: 100%;
 
@@ -162,17 +184,6 @@ width: 100%;
 }
 
 /* Custom Icons */
-
-.about-image{
-  margin: 1rem;
-}
-.about-image img {
-  width:300px;
-  border-radius: 50%;
-}
-.about-hr{
-  border-top: .05rem solid #53A7DB;
-}
 
 div.custom-icon{
   margin-left: 15%;
