@@ -12,6 +12,8 @@ body{
   margin-top:-4rem; 
 }
 
+/* Navbar */
+
 .navbar{
   text-transform: uppercase;
   font-weight: bold;
@@ -30,6 +32,17 @@ body{
 .navbar-dark .navbar-nav .nav-link:hover{
   color:#53A7DB;
 }
+.btn-lg{
+  border-width: medium;
+  padding: .6rem 1.3rem;
+  font-size: 1.6vw; 
+}
+.btn-outline-light, .btn-outline-light:hover  {
+  color:#70C3F6;
+  border-color:#70C3F6;
+}
+
+/* General */
 
 .home-inner{
   background-image: url(img/three_gen_smiles.jpg); 
@@ -59,25 +72,16 @@ body{
   text-shadow: .1rem .1rem .5rem #2e2c2cbe;
   padding-bottom: 1.6rem;
 }
-.btn-lg{
-  border-width: medium;
-  padding: .6rem 1.3rem;
-  font-size: 1.6vw; 
-}
-.btn-outline-light, .btn-outline-light:hover  {
-  color:#70C3F6;
-  border-color:#70C3F6;
-}
 
 .narrow{
-   width:75%;
-   margin: 1.5rem auto;
-   padding-top: 2.5rem;
+    width:75%;
+    margin: 1.5rem auto;
+    padding-top: 2.5rem;
 }
 .jumbotron{
-    margin-bottom: 0;
-    padding: 0 0 3.5rem;
-    border-radius: 0;
+  margin-bottom: 0;
+  padding: 0 0 3.5rem;
+  border-radius: 0;
 }
 h3.heading{
   font-size: 1.9rem;
@@ -92,6 +96,8 @@ h3.heading{
   margin: 0 auto .8rem;
 }
 
+/* Services */
+
 .service svg.svg-inline--fa{
   color: #53A7DB;
 }
@@ -105,6 +111,33 @@ h3.heading{
 }
 .narrow.text-center{
   margin-top: 0;
+}
+
+.fixed{
+  background-image: url(img/house-call.png);
+  z-index: -1;
+}
+.dark{
+  background-color: rgba(0, 0, 0, 0.2);
+  color: whitesmoke;
+  text-shadow: .1rem .1rem .3rem #2e2c2cbe;
+  padding: 7rem 2rem;
+}
+.fixed-background p{
+  margin-left: 8rem;
+  margin-right: 8rem;
+}
+
+/* Google Embeded */
+
+.google-reviews{
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  padding: 15px;
+  border-radius: .3rem;
+}
+.google-reviews p{
+text-align: left;
 }
 
 .map {
@@ -128,6 +161,8 @@ height: 437px;
 width: 100%;
 }
 
+/* Custom Icons */
+
 .about-image{
   margin: 1rem;
 }
@@ -138,6 +173,39 @@ width: 100%;
 .about-hr{
   border-top: .05rem solid #53A7DB;
 }
+
+div.custom-icon{
+  margin-left: 15%;
+}
+img.custom-icon{
+  width: 20%;
+  padding:0px; 
+
+  position: relative; 
+  top: -30px;
+}
+div.custom-icon h3, div.custom-icon p{
+  position: relative; 
+  top: -24px;
+}
+img.custom-icon-2{
+  width: 18%;
+  padding:0px; 
+
+  position: relative; 
+  top: -20px;
+}
+div.custom-icon-2 h3, div.custom-icon-2 p {
+  position: relative; 
+  top: -18px;
+}
+@media (max-width: 767px) {
+  div.col-md-4.custom-icon {  
+  margin-left: 0;
+  }
+}
+
+/* Footer */
 
 footer{
 background-color: #40474e;
@@ -170,37 +238,6 @@ hr.socket{
   width: 100%;
   border-top: .2rem solid #666b71;
   margin-top: 3rem; 
-}
-
-div.custom-icon{
-  margin-left: 15%;
-}
-img.custom-icon{
-  width: 20%;
-  padding:0px; 
-
-  position: relative; 
-  top: -30px;
-}
-div.custom-icon h3, div.custom-icon p{
-  position: relative; 
-  top: -24px;
-}
-img.custom-icon-2{
-  width: 18%;
-  padding:0px; 
-
-  position: relative; 
-  top: -20px;
-}
-div.custom-icon-2 h3, div.custom-icon-2 p {
-  position: relative; 
-  top: -18px;
-}
-@media (max-width: 767px) {
-  div.col-md-4.custom-icon {  
-  margin-left: 0;
-  }
 }
 
 /*<div>Icon made by <a href="https://www.flaticon.com/authors/freepik" 
