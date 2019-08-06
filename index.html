@@ -297,25 +297,59 @@
         </footer>
     </div>
 
-    <button class="questions" onclick="openForm()">Any Questions?</button>
+    <button class="questions-button" onclick="openForm()">Any Questions?</button>
 
-    <div id="form-questions" class="form-popup">
-        <i class="far fa-times-circle" onclick="closeForm()"></i>
+    <!-- <?php $thankYou ?> -->
 
-        <form class="form-container" action="/action_page.php">
+    <div id="questions-form" class="questions-form">
+        <form id="form" class="form-container" method="post" action="submit.php">
+
             <h4>Feel Free to Reach Out!</h4>
-            <input type="text" placeholder="Enter Email Here" name="email-field" required>
-            <textarea placeholder="Enter Comments Here" name="comment-field" required></textarea>
-            <button class="btn" type="submit">Send</button>
+            <input type="text" placeholder="Enter Full Name Here" name="senderName" required>
+            <input type="email" placeholder="Enter Email Here" name="senderEmail" required>
+            <textarea placeholder="Enter Comments Here" name="message" required></textarea>
+
+            <button class="btn cancel" onclick="closeForm()">Cancel</button>
+            <button class="btn send" type="submit">Send</button>
+
         </form>
     </div>
 
     <script>
+
+        // const questionForm = document.getElementById('form');
+        // questionForm.addEventListener('submit', function (e) {
+        //     e.preventDefault();
+
+        //     const formData = new FormData(this);
+
+        //     fetch('submit.php', {
+        //         method: 'post',
+        //         body: formData,
+        //     }).then(function (response) {
+        //         return response.text();
+        //     }).then(function (text) {
+        //         console.log(text);
+        //     }).catch(function (error) {
+        //         console.error(error);
+        //     });
+        // });
+
+        // $('.button').click(function() {
+        //     $.ajax({
+        //         type: "POST",
+        //         url: "submit.php",
+        //         data: { name: "John" }
+        //     }).done(function (msg) {
+        //         alert("Data Saved: " + msg);
+        //     });
+        // });
+
         function openForm() {
-            document.getElementById("form-questions").style.display = "block";
+            document.getElementById("questions-form").style.display = "block";
         }
         function closeForm() {
-            document.getElementById("form-questions").style.display = "none";
+            document.getElementById("questions-form").style.display = "none";
         }
     </script>
 

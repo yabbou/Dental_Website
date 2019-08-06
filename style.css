@@ -258,7 +258,7 @@ hr.socket{
 
 /* Form Pop-up */
 
-.questions {
+.questions-button {
   background-color:#70C3F6;
   color: white;
   opacity: 0.8;
@@ -273,30 +273,28 @@ hr.socket{
   cursor: pointer;
   position: fixed;
   
-  bottom: 23px;
-  right: 28px;
+  bottom: 20px;
+  right: 20px;
 }
-.questions:hover{
+.questions-button:hover{
   opacity: 1;
 }
 
-.form-popup {
+.questions-form {
   display: none;
   position: fixed;
-  bottom: 0;
-  right: 15px;
 
   z-index: 9;
-  box-shadow: .1rem .1rem .1rem .1rem rgba(190, 190, 190, 0.8); 
+  box-shadow: .1rem .1rem .9rem rgba(158, 158, 158, 0.8); 
   
   border-radius: .3rem;
-  bottom: 23px;
-  right: 28px;
+  bottom: 20px;
+  right: 20px;
 }
 .form-container {
   background-color: white;
   max-width: 400px;
-  padding: 12px;
+  padding: 11px 15px;
 
   border-radius: .3rem;
   overflow: hidden;
@@ -317,10 +315,9 @@ hr.socket{
   overflow-y: scroll;
 }
 .form-container .btn {
-  background-color: #46ca4a;
   color: white;
   text-transform: uppercase;
-  font-size: 1.2vw; 
+  font-size: 1vw; 
 
   padding: .5rem .8rem;
   border: none;
@@ -328,15 +325,20 @@ hr.socket{
   border-width: thick;
 
   cursor: pointer;
-  margin-left: 40%;
-  margin-right: 40%;
+  margin-left: 4px;
 
-  opacity: 0.8;
-  right: 2px;
+  opacity: 0.75;
+  float: right;
+}
+.form-container .btn.send {
+  background-color: #46ca4a;
+}
+.form-container .btn.cancel {
+  background-color: #f85555;
 }
 
 .form-container .btn:hover, .open-button:hover {
-  opacity: 1;
+  opacity: 2;
 }
 
 button:focus, .form-container input[type=text]:focus,
@@ -344,4 +346,7 @@ button:focus, .form-container input[type=text]:focus,
   outline: none;
   background-color: white;
   transition: background-color .1s ease-in-out;
+}
+.form-container h4{
+margin-bottom: 0;
 }
