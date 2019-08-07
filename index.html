@@ -84,7 +84,7 @@
                         <img class="custom-icon implant" src="img/icons/implant_tooth.png">
                         <h3>Implant Dentures</h3>
                         <p>
-                            Denture implants help preserve the bone and maintain the natural facial structure by
+                            <b>Denture implants</b> help preserve the bone and maintain the natural facial structure by
                             immitating the natural
                             tooth root system.
                         </p>
@@ -99,7 +99,7 @@
                         <h3>Full And Partial Detures</h3>
                         <p>
                             <b>Full dentures</b> are for patients who are missing all of their teeth, either on the
-                            top or bottom arch. <b>Partial dentures</b> are for patients missing some teeth, with metal
+                            top or bottom arch. <b>Partial dentures</b> are for patients missing some teeth, with
                             clasps holding on to the remaining natural teeth.
                         </p>
                     </div>
@@ -111,8 +111,8 @@
 
                         <h3>Denture Repairs</h3>
                         <p>
-                            Dentures may crack or chip even with regualr use, or perhaps not fit as securely as when you
-                            first bought them, since your gums and jaw bone shrink overtime. This discomfort can be
+                            Dentures may crack or chip even with regualr use, or perhaps no longer fit as securely,
+                            since your gums and jaw bone shrink overtime. This discomfort can be
                             addressed with a <b>denture repair</b>, adjustment, or polishing.
                         </p>
                     </div>
@@ -126,8 +126,10 @@
                     <div class="service">
                         <img class="custom-icon calendar" src="img/icons/calendar.png">
                         <h3>Flexible Scheduling</h3>
-                        <p>Whether an emergeny or just a casual check-up, a weekend or in the evening, we are always
-                            here to help.</p>
+                        <p>Annual denture check-ups and cleanings are highly recommended.
+
+                            Whether an emergeny or just a regular check-up, on a weekend or in the evening, we are
+                            always here to help.</p>
                     </div>
                 </div>
 
@@ -136,7 +138,7 @@
                         <img class="custom-icon toronto" src="img/icons/toronto_2.png">
                         <h3>Toronto & GTA-Wide<br>Servicing</h3>
                         <p>
-                            Our denturist will travel far and wide to attend to your denture needs.
+                            Our denturist will travel far and wide to attend to your denture needs!
                         </p>
                     </div>
                 </div>
@@ -299,15 +301,18 @@
 
     <button class="questions-button" onclick="openForm()">Any Questions?</button>
 
-    <!-- <?php $thankYou ?> -->
-
     <div id="questions-form" class="questions-form">
-        <form id="form" class="form-container" method="post" action="submit.php">
+
+        <form id="gform" class="form-container" action="https://formspree.io/jacobabbou@outlook.com" method="POST">
+            <!-- target="hidden-iframe" enctype="text/plain" onsubmit="submitted=true;" 
+                action="https://docs.google.com/forms/d/e/1FAIpQLScQVTnjmjcEu3MOCwRMghlZMuhUJt-jMwRqfxxZRhUcp4nfQQ/formResponse?"> -->
 
             <h4>Feel Free to Reach Out!</h4>
-            <input type="text" placeholder="Enter Full Name Here" name="senderName" required>
-            <input type="email" placeholder="Enter Email Here" name="senderEmail" required>
-            <textarea placeholder="Enter Comments Here" name="message" required></textarea>
+            <input type="text" placeholder="Enter Full Name Here" name="entry.2005620554" id="entry.2005620554"
+                required>
+            <input type="text" placeholder="Enter Phone Number Here" name="entry.1166974658" id="entry.1166974658"
+                required>
+            <textarea placeholder="Enter Comments Here" name="entry.839337160" id="entry.839337160" required></textarea>
 
             <button class="btn cancel" onclick="closeForm()">Cancel</button>
             <button class="btn send" type="submit">Send</button>
@@ -315,36 +320,9 @@
         </form>
     </div>
 
+    <!-- <iframe name="hidden-iframe" id="hidden-iframe" style="display:none;" onload="if(submitted) {}"></iframe> -->
+
     <script>
-
-        // const questionForm = document.getElementById('form');
-        // questionForm.addEventListener('submit', function (e) {
-        //     e.preventDefault();
-
-        //     const formData = new FormData(this);
-
-        //     fetch('submit.php', {
-        //         method: 'post',
-        //         body: formData,
-        //     }).then(function (response) {
-        //         return response.text();
-        //     }).then(function (text) {
-        //         console.log(text);
-        //     }).catch(function (error) {
-        //         console.error(error);
-        //     });
-        // });
-
-        // $('.button').click(function() {
-        //     $.ajax({
-        //         type: "POST",
-        //         url: "submit.php",
-        //         data: { name: "John" }
-        //     }).done(function (msg) {
-        //         alert("Data Saved: " + msg);
-        //     });
-        // });
-
         function openForm() {
             document.getElementById("questions-form").style.display = "block";
         }
@@ -352,6 +330,25 @@
             document.getElementById("questions-form").style.display = "none";
         }
     </script>
+
+    <script type="text/javascript">var submitted = false;</script>
+
+    <script type="text/javascript">
+        $('#gform').on('submit', function (event) {
+            event.preventDefault();
+            $('#gform *').fadeOut(2000);
+            $('#gform').prepend('Your message has been sent.');
+        });
+    </script>
+
+    <!-- <script>
+        $(function () {
+            $('#gform').submit(function (event) {
+                event.preventDefault();
+                $(this).submit();
+            });
+        });
+    </script> -->
 
     <!-- Source Files -->
     <script src="js/jquery-3.3.1.min.js"></script>
