@@ -180,6 +180,37 @@ h3.heading{
 text-align: left;
 }
 
+.review-heading{
+  padding-bottom: 0!important;
+}
+.review-banner{
+  background-color: rgba(211, 211, 211, 0.7);
+  font-weight: 500; 
+  margin: 1rem;
+  padding: .4rem 0;
+}
+.review-banner h6{
+  display: inline-block;
+  margin-right: .5rem;
+}
+.review-button{
+  background-color:#70C3F6;
+  color: white;
+  opacity: 0.75;
+  
+  border: 0;
+  border-radius: .3rem;
+  border-width: thick;
+
+  height: 1rem;
+  padding: 5.5px;
+  display: initial;
+}
+.review-button:hover{
+  opacity: 1;
+  color: white;
+}
+
 .map {
 position: relative;
 height: 437px;
