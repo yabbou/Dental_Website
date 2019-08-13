@@ -213,12 +213,14 @@ h3.heading{
   border-radius: .3rem;
   padding: 1rem;
 }
-.carousel-reviews p{
-text-align: left;
-}
 .carousel-item .col-md-4{
   display: inline-flex;
   float: left;
+  padding: .8rem!important;
+  width: 32.5%;
+}
+.carousel-item.row{
+  margin: 0 1rem!important;
 }
 
 .carousel-indicators {
