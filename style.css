@@ -18,7 +18,7 @@
 .navbar-nav li{
   padding-right: .7rem; 
 }
-.navbar-dark .navbar-nav .nav-link {
+.navbar-light .navbar-nav .nav-link {
   color:#666666; 
   height: 55px;
   vertical-align: middle;
@@ -26,16 +26,15 @@
 .nav-link{
   padding-top: 1rem;
 }
-.navbar-dark .navbar-nav .nav-link.active,
-.navbar-dark .navbar-nav .nav-link:hover{
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link:hover{
   color:#53A7DB;
 }
 .btn-lg{
   border-width: medium;
   padding: .6rem 1.3rem;
   font-size: 1.6vw; 
-  text-shadow: .1rem .1rem .9rem #2e2c2cbe;
-
+  background-color: #fbfbfb85;
 }
 .btn-outline-light, .btn-outline-light:hover  {
   color:#70C3F6;
@@ -44,8 +43,8 @@
 .btn-outline-light:hover{
   text-shadow: none;
 }
-/* General */
 
+/* General */
 body{
   overflow-x: hidden;
   font-family: 'Lato', sans-serif;
@@ -112,6 +111,14 @@ h3.heading{
 }
 
 /* Services */
+.lead.text-center a{
+  color:#505962;
+  text-decoration-line: underline;
+}
+.lead.text-center a:hover{
+  color: #53a7db;
+  text-decoration-line: none;
+}
 
 .service svg.svg-inline--fa{
   color: #53A7DB;
@@ -170,16 +177,6 @@ h3.heading{
 
 /* Google Embeded */
 
-.google-reviews{
-  background-color: rgba(255, 255, 255, 0.8);
-  width: 70%;
-  padding: 15px;
-  border-radius: .3rem;
-}
-.google-reviews p{
-text-align: left;
-}
-
 .review-heading{
   padding-bottom: 0!important;
 }
@@ -190,7 +187,7 @@ text-align: left;
   padding: .5rem 0;
 }
 .review-banner h6{
-  display: inline-block;
+  display: inline-block; 
   margin-right: .5rem;
 }
 .review-button{
@@ -210,6 +207,34 @@ text-align: left;
   opacity: 1;
   color: white;
 }
+
+.carousel-reviews{
+  background-color: #ffffffcc;
+  border-radius: .3rem;
+  padding: 1rem;
+}
+.carousel-reviews p{
+text-align: left;
+}
+.carousel-item .col-md-4{
+  display: inline-flex;
+  float: left;
+}
+
+.carousel-indicators {
+  bottom: -50px;
+}
+.carousel-indicators li {
+    background: #a3a3a3;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+}
+.carousel-indicators .active {
+background: #707070;
+}
+/* @media (max-width: 767px) { 
+} */
 
 .map {
 position: relative;
@@ -250,6 +275,10 @@ div.toronto{
 div.full-and-partial{
   position: relative; 
   top: 6px;
+}
+
+.yp{
+  height: 28px!important;
 }
 
 /* Footer */
