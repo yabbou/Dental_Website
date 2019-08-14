@@ -471,7 +471,8 @@ margin-bottom: 0;
   }
 
   .questions-button{
-  font-size: inherit;  
-  left: auto;
+  /* font-size: inherit;  
+  left: auto; */
+  display: none;
   }
 }
