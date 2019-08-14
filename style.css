@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700');
 
 /* Navbar */
-
 .nav-title{
   color: #53A7DB; 
   font-size: 180%; 
   font-weight: bolder;
+}
+@media (max-width: 767px) {
+  .nav-title{
+    font-size: 100%; 
+    width: 80%;
+  }
 }
 .navbar{
   text-transform: uppercase;
@@ -13,7 +18,7 @@
   font-size: .9rem;
 
   letter-spacing: .1rem;
-  background: rgba(255, 255, 255, 0.8)!important; 
+  background: rgba(255, 255, 255, 0.87)!important; 
 }
 .navbar-nav li{
   padding-right: .7rem; 
@@ -34,7 +39,7 @@
   border-width: medium;
   padding: .6rem 1.3rem;
   font-size: 1.6vw; 
-  background-color: #fbfbfb85;
+  background-color: #fbfbfb94;
 }
 .btn-outline-light, .btn-outline-light:hover  {
   color:#70C3F6;
@@ -59,7 +64,8 @@ body{
 
 .home-inner{
   background-image: url(img/three_gen_smiles.jpg); 
-  filter: brightness(102%);
+  -webkit-filter: brightness(103%) grayscale(5%) contrast(90%);
+  filter: brightness(103%) grayscale(5%) contrast(90%);
   zoom: 60%;
 }
 .caption{
@@ -74,16 +80,25 @@ body{
 .caption h1{
   font-size: 4.6vw;
   font-weight: bold;
-  letter-spacing: .1rem;
-
+  /* letter-spacing: .1rem; */
+  padding: 0 4rem;
+  
   color:#53A7DB; /* the darker shade */
-  text-shadow: .1rem .1rem .1rem #2e2c2cbe;
-  padding-bottom: 0rem;
+  text-shadow: 
+  -.8px -.8px 0 #1e3d50,
+  .8px .8px 0 #1e3d50,
+  .8px -.8px 0 #1e3d50,
+  -.8px .8px 0 #1e3d50
+  ;
 }
 .caption h3{
   font-size: 2.6vw;
   color:#70C3F6;
-  text-shadow: .1rem .1rem .1rem #2e2c2cbe;
+  text-shadow: 
+  -1px -1px 0 #3e779b,
+  1px -1px 0 #3e779b,
+  -1px 1px 0 #3e779b,
+  1px 1px 0 #3e779b;  
   padding-bottom: 1.6rem;
 }
 
@@ -132,7 +147,8 @@ h3.heading{
   font-size: 1.1rem;
 }
 .narrow.text-center{
-  margin-top: 0;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
 }
 
 .fixed{
@@ -153,6 +169,14 @@ h3.heading{
   .fixed-background p{
   margin: 0;
   }
+
+  .about-the-denturist{
+  display: table;
+  padding: 0!important;
+  }
+  #about .row{
+    display: block;
+  }
 }
 
 /* h5.dentursit{
@@ -160,15 +184,18 @@ h3.heading{
   color: #505962; 
   font-weight: bolder;
 } */
-/* .narrow.text-center .about-the-dentursit{
+.lead.col.about-the-denturist{
   text-align: left;
-} */
-
+  font: size 13;
+  padding-right: 5rem;
+  text-align: justify;
+}
 .about-image{
   margin: 1rem;
 }
 .about-image img {
-  width:300px;
+  width: 230px;
+  border: solid 0.1rem rgba(144, 144, 144, 0.507);
   border-radius: 50%;
 }
 .about-hr{
@@ -235,8 +262,6 @@ h3.heading{
 .carousel-indicators .active {
 background: #707070;
 }
-/* @media (max-width: 767px) { 
-} */
 
 .map {
 position: relative;

@@ -1,4 +1,4 @@
-/*--- Extra Bootstrap Column Padding --*/
+/*--- Column Padding --*/
 [class*="col-"] {
   padding: 1rem;
 }
