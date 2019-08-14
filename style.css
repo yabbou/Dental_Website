@@ -1,16 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700');
 
+*{
+  overflow-x: hidden;
+}
+
 /* Navbar */
 .nav-title{
   color: #53A7DB; 
   font-size: 180%; 
   font-weight: bolder;
-}
-@media (max-width: 767px) {
-  .nav-title{
-    font-size: 100%; 
-    width: 80%;
-  }
 }
 .navbar{
   text-transform: uppercase;
@@ -30,6 +28,7 @@
 }
 .nav-link{
   padding-top: 1rem;
+  /* display: inline-flex; */
 }
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .nav-link:hover{
@@ -80,7 +79,6 @@ body{
 .caption h1{
   font-size: 4.6vw;
   font-weight: bold;
-  /* letter-spacing: .1rem; */
   padding: 0 4rem;
   
   color:#53A7DB; /* the darker shade */
@@ -135,6 +133,9 @@ h3.heading{
   text-decoration-line: none;
 }
 
+.service{
+  overflow-x: visible;
+}
 .service svg.svg-inline--fa{
   color: #53A7DB;
 }
@@ -164,19 +165,6 @@ h3.heading{
 .fixed-background p{
   margin-left: 8rem;
   margin-right: 8rem;
-}
-@media (max-width: 767px) {
-  .fixed-background p{
-  margin: 0;
-  }
-
-  .about-the-denturist{
-  display: table;
-  padding: 0!important;
-  }
-  #about .row{
-    display: block;
-  }
 }
 
 /* h5.dentursit{
@@ -229,6 +217,7 @@ h3.heading{
   height: 1rem;
   padding: 5.5px;
   display: initial;
+  /* float: inline-end; */
 }
 .review-button:hover{
   opacity: 1;
@@ -436,4 +425,53 @@ button:focus, .form-container input[type=text]:focus,
 }
 .form-container h4{
 margin-bottom: 0;
+}
+
+/* Mobile Resizing */
+@media screen and (max-width: 767px) {
+  
+  .nav-title{
+  font-size: 100%; 
+  width: 80%;
+  }
+  .caption h1{
+    font-size: 6vw;
+    padding: 0 0;
+  }
+  .caption h3{
+    font-size: 3.5vw;
+  }
+  .btn-lg{
+    font-size: 1rem;
+  }
+
+  .col-12.narrow{
+  width: 100%;
+  }
+
+  .fixed-background p{
+  margin: 0;
+  }
+
+  .about-the-denturist{
+  display: table;
+  padding: 0!important;
+  }
+  #about .row{
+    display: block;
+  }
+  .carousel-item .col-md-4{
+  display: block;
+  float: none;
+  width: 95%;
+  }
+
+  .review-banner {
+  margin: 0;
+  }
+
+  .questions-button{
+  font-size: inherit;  
+  left: auto;
+  }
 }
