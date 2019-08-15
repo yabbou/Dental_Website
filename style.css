@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700');
 
-*{
+/* *{
   overflow-x: hidden;
-}
+} */
 
 /* Navbar */
 .nav-title{
@@ -200,6 +200,7 @@ h3.heading{
   font-weight: 500; 
   margin: 1rem -50vw;
   padding: .5rem 0;
+  overflow-x: visible!important;
 }
 .review-banner h6{
   display: inline-block; 
@@ -224,6 +225,9 @@ h3.heading{
   color: white;
 }
 
+.carousel-inner{
+overflow-y: hidden;
+}
 .carousel-reviews{
   background-color: #ffffffcc;
   border-radius: .3rem;
@@ -429,7 +433,6 @@ margin-bottom: 0;
 
 /* Mobile Resizing */
 @media screen and (max-width: 767px) {
-  
   .nav-title{
   font-size: 100%; 
   width: 80%;
@@ -471,8 +474,13 @@ margin-bottom: 0;
   }
 
   .questions-button{
-  /* font-size: inherit;  
-  left: auto; */
-  display: none;
+    /* font-size: inherit;  
+    left: auto; */
+    display: none;
   }
 }
+/* @media screen and (min-width: 1024px) {
+.navbar-collapse{
+   flex-grow: 0; 
+} 
+} */
