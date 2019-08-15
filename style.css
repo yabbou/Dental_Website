@@ -136,7 +136,7 @@ h3.heading{
 .service{
   overflow-x: visible;
 }
-.service svg.svg-inline--fa{
+.service svg.svg-inline--fa {
   color: #53A7DB;
 }
 .service h3{
@@ -198,13 +198,64 @@ h3.heading{
 .review-banner{
   background-color: #f8f9fa;
   font-weight: 500; 
-  margin: 1rem -50vw;
+  margin: 1rem -12.5vw;
   padding: .5rem 0;
-  overflow-x: visible!important;
+  /* overflow-x: visible!important; */
 }
 .review-banner h6{
   display: inline-block; 
   margin-right: .5rem;
+}
+
+.tooltip {
+  opacity: 1;
+  display: inline-block;
+  z-index: 0;
+}
+.tooltiptext {
+  width: 180px;
+  background-color: #666768;
+  color: #fff;
+  
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 0;
+  
+  bottom: 125%;
+  left: 50%;
+  margin-left: -90px;
+
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  
+  top: 100%;
+  left: 50%;
+
+  margin-left: -5px;
+  border-width: 5px;
+
+  border-style: solid;
+  border-color: #666768 transparent transparent transparent;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.fa-info-circle{
+  color: #505962;
+  vertical-align: middle;
+  cursor: pointer;
+  visibility: visible;
+}
+.fa-info-circle:hover{
+  color: #53A7DB;
 }
 .review-button{
   background-color:#70C3F6;
@@ -217,6 +268,7 @@ h3.heading{
 
   height: 1rem;
   padding: 5.5px;
+  margin-right: .5rem;
   display: initial;
   /* float: inline-end; */
 }
@@ -432,7 +484,7 @@ margin-bottom: 0;
 }
 
 /* Mobile Resizing */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .nav-title{
   font-size: 100%; 
   width: 80%;
@@ -469,18 +521,9 @@ margin-bottom: 0;
   width: 95%;
   }
 
-  .review-banner {
-  margin: 0;
-  }
-
   .questions-button{
     /* font-size: inherit;  
     left: auto; */
     display: none;
   }
 }
-/* @media screen and (min-width: 1024px) {
-.navbar-collapse{
-   flex-grow: 0; 
-} 
-} */
