@@ -14,7 +14,7 @@
 
 <body data-spy="scroll" data-target="#navbarResponsive">
 
-    <div id="home">
+    <div id="home" class="home">
         <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
 
             <div class="nav-title">Bathurst Lawrence Denture Clinic & Mobile Services</div>
@@ -41,12 +41,26 @@
         </div>
 
         <div class="caption text-center">
-            <h1>Bathurst Lawrence Denture Clinic & Mobile Services</h1>
-            <h3>Where Your Smile Is Important to Us</h3>
-            <a class="btn btn-outline-light btn-lg" href="#contact">Book Your appointment today</a>
+            <div class="wrapper">
+                <h2>Welcome to<br>the Denture Clinic</h2>
+                <h4>Where Your Beautiful Smile Is Important to Us</h4>
+                <a class="btn btn-lg" href="#contact">Book Your appointment today</a>
+            </div>
         </div>
 
     </div>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 
     <div id="because-we-care" class="offset">
         <div class="col-12 narrow">
