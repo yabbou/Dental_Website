@@ -44,7 +44,7 @@ body{
   margin-top:-4rem; 
 }
 .home{
-  background-color: rgba(0, 0, 0, 0.20);
+  background-color: rgba(0, 0, 0, 0.10);
 }
 .home-inner{
   background-image: url(img/three_gen_smiles.jpg); 
