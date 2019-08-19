@@ -103,6 +103,44 @@ a, button, .btn, svg{
   transition: all 0.2s ease-in;
 }
 
+/* .anchor a {
+  position: absolute;
+  bottom: .5px;
+  left: 50%;
+  z-index: 2;
+  display: inline-block;
+
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: whitesmoke;
+  font-weight: 400;
+  font-size: 13px;
+
+  letter-spacing: .1em;
+  text-decoration: none;
+  transition: opacity .3s;
+}
+.anchor a:hover {
+  opacity: .5;
+}
+#down-anchor a {
+  padding-top: 40px;
+}
+#down-anchor a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+} */
+
 .narrow{
     width:75%;
     margin: 1.5rem auto;
@@ -528,3 +566,9 @@ margin-bottom: 0;
     display: none;
   }
 }
+
+/* @media screen and (max-width: 562px) {
+  .anchor{
+    display: none;
+  }
+} */
