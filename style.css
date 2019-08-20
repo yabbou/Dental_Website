@@ -567,8 +567,14 @@ margin-bottom: 0;
   }
 }
 
-/* @media screen and (max-width: 562px) {
-  .anchor{
-    display: none;
+@media (max-width: 375px) {
+  .caption h2 {
+    font-size: 40px;
+    line-height: 1.1;
   }
-} */
+
+  .btn-lg{
+    font-size: 14px;
+    margin-top: 10px;
+  }
+}
